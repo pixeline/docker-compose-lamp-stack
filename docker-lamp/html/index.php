@@ -1,13 +1,12 @@
 <?php
 echo "Hello World!";
-$con = mysqli_connect("db","wordpress","wordpress","wordpress");
+$con = mysqli_connect("db", "wordpress", "wordpress", "wordpress");
 
 // Check connection
-if (mysqli_connect_errno())
-  {
+if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-  else {
-  	 echo "done";
-  }
-?>
+} else {
+  echo "MYSQL connection ok";
+}
+
+phppinfo();
